@@ -86,8 +86,9 @@ header .content-header .links li {
 header .content-header .links li a {
   padding: 10px;
   display: block;
-  color: #000;
+  color: #6d6d6d;
   position: relative;
+  font-size: 25px;
 }
 header .content-header .links li a.active {
   color: var(--main-color);
@@ -232,6 +233,7 @@ footer .footer-top .links li a {
   padding: 10px;
   display: block;
   color: #fff;
+  font-size: 25px;
 }
 footer .footer-top .social {
   display: flex;
@@ -457,6 +459,7 @@ footer .footer-bottom {
 }
 .home-about .content-home-about .images {
   position: relative;
+  text-align: left;
 }
 .home-about .content-home-about .images .back {
   width: 507px;
@@ -464,7 +467,7 @@ footer .footer-bottom {
 .home-about .content-home-about .images .front {
   position: absolute;
   top: -49px;
-  right: -118px;
+  right: 8px;
   width: 550px;
 }
 /* Start Subscriptions  */
@@ -605,4 +608,23 @@ footer .footer-bottom {
 .contact-us .content-conatct .form-conatct textarea {
   resize: none;
   height: 150px;
+}
+
+/* ===================== terms_conditions Page========== ====== */
+.terms-conditions {
+  margin-bottom: 50px;
+}
+.terms-conditions .logo {
+}
+.terms-conditions .logo img {
+  display: block;
+  height: 233px;
+  width: 181px;
+  margin: 30px auto;
+}
+.terms-conditions p {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #6d6d6d;
 }
