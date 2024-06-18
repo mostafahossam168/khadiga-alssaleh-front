@@ -20,6 +20,7 @@
     <title>منصة خديجة التعليمية</title>
   </head>
   <body>
+    <div class="overlay"></div>
     <div class="top-header">
       <p><i class="fa-solid fa-clock"></i> <span>10:30</span> مساءا</p>
       <p>
@@ -33,10 +34,11 @@
             <img src="images/logo.png" alt="" />
           </div>
           <ul class="links">
+            <i class="fa-solid fa-close close-sidbar"></i>
             <li><a href="index.html">الرئيسيه</a></li>
             <li><a href="#"> من نحن </a></li>
             <li><a href="courses.html" class="active">الدورات</a></li>
-            <li><a href="#"> تواصل معنا </a></li>
+            <li><a href="contact-us.html"> تواصل معنا </a></li>
           </ul>
           <div class="info">
             <div class="not-member">
@@ -227,9 +229,9 @@
                   المفضلة
                 </a>
 
-                <a href="orders.html">
+                <a href="terms_conditions.html">
                   <i class="fa-solid fa-briefcase"></i>
-                  طلباتي
+                  الشروط والاحكام
                 </a>
 
                 <a href="index.html">
@@ -238,6 +240,9 @@
                 </a>
               </div>
             </div> -->
+          </div>
+          <div class="open-sidbar">
+            <i class="fa-solid fa-bars"></i>
           </div>
         </div>
       </div>
@@ -579,11 +584,6 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function menuToggle() {
-        const toggleMenu = document.querySelector(".menu");
-        toggleMenu.classList.toggle("active");
-      }
-    </script>
+    <script src="js/main.js"></script>
   </body>
 </html>
