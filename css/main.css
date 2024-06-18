@@ -308,7 +308,7 @@ footer .footer-top {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 15px;
+  padding: 50px 0 15px;
 }
 footer .footer-top .logo img {
   width: 90px;
@@ -390,6 +390,8 @@ footer .footer-bottom {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  display: flex;
+  align-items: center;
 }
 .home-banar .content {
   display: flex;
@@ -582,7 +584,7 @@ footer .footer-bottom {
     font-size: 15px;
   }
   .courses .boxs-courses {
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   }
   .courses .boxs-courses .course .info-course h4 {
     font-size: 18px;
@@ -851,8 +853,6 @@ footer .footer-bottom {
 .terms-conditions {
   margin-bottom: 50px;
 }
-.terms-conditions .logo {
-}
 .terms-conditions .logo img {
   display: block;
   height: 233px;
@@ -873,4 +873,69 @@ footer .footer-bottom {
     height: 200px;
     width: 150px;
   }
+}
+
+/* ===================== Account Page========== ====== */
+.form-account {
+  box-shadow: 0px 0px 70px 0px #0000001a;
+  max-width: 800px;
+  margin: 20px auto 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.form-account .trainer-photo {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.form-account .trainer-photo label {
+  cursor: pointer;
+  display: block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.form-account .trainer-photo .photo {
+  background-color: #ececec;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 6px solid #f6f6f6;
+  overflow: hidden;
+}
+
+.form-account .trainer-photo .camera-photo {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.form-account .trainer-photo input[type="file"] {
+  display: none;
+}
+
+.form-account .save-change {
+  margin: 15px auto;
+  width: fit-content;
+}
+.form-account .head-account {
+  color: #1f2427;
+  font-size: 25px;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px 0;
+  margin: 0;
 }
