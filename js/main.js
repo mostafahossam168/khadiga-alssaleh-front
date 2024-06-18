@@ -17,22 +17,24 @@ closeSidbar.addEventListener("click", () => {
   overlay.classList.remove("active");
 });
 
-var swiper = new Swiper(".brand-slider ", {
-  loop: true,
-  spaceBetween: 20,
-  autoplay: {
-    // delay: 7500,
-    // disableOnInteraction: false,
-  },
-  breakpoints: {
-    0: {
-      slidesPerView: 3,
+if (document.querySelector(".brand-slider")) {
+  var swiper = new Swiper(".brand-slider", {
+    loop: true,
+    spaceBetween: 20,
+    autoplay: {
+      // delay: 7500,
+      // disableOnInteraction: false,
     },
-    600: {
-      slidesPerView: 5,
+    breakpoints: {
+      0: {
+        slidesPerView: 3,
+      },
+      600: {
+        slidesPerView: 5,
+      },
+      1020: {
+        slidesPerView: 7,
+      },
     },
-    1020: {
-      slidesPerView: 7,
-    },
-  },
-});
+  });
+}
