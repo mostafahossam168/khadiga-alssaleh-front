@@ -946,3 +946,67 @@ footer .footer-bottom {
   padding: 10px 0;
   margin: 0;
 }
+
+/* ===================== About Page========== ====== */
+.about {
+  margin-bottom: 50px;
+}
+.about .about-content {
+  display: flex;
+  gap: 10px;
+}
+.about .about-content .text,
+.about .about-content .image {
+  width: 50%;
+}
+.about .about-content .image img {
+  width: 90%;
+  margin: auto;
+}
+.about .about-content .text {
+}
+.about .about-content .text .header {
+  font-size: 40px;
+  font-weight: 700;
+  color: var(--main-color);
+}
+.about .about-content .text .long-text {
+  color: #6d6d6d;
+  font-size: 21px;
+  line-height: 40px;
+  margin: 20px 0;
+}
+.about .about-content .text ul li {
+  font-size: 21px;
+  color: #000;
+  padding-bottom: 10px;
+}
+.about .about-content .text ul li img {
+  padding-left: 10px;
+}
+
+@media (max-width: 991px) {
+  .about .about-content {
+    flex-direction: column;
+  }
+  .about .about-content .text,
+  .about .about-content .image {
+    width: 100%;
+  }
+  .about .about-content .image img {
+    width: 100%;
+  }
+  .about .about-content .text .header {
+    font-size: 30px;
+  }
+  .about .about-content .text .long-text {
+    font-size: 17px;
+    line-height: 33px;
+  }
+  .about .about-content .text ul li img {
+    width: 30px;
+  }
+  .about .about-content .text ul li {
+    font-size: 17px;
+  }
+}
