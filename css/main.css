@@ -11,7 +11,7 @@
 /* CUSTOM MAIN CSS */
 input:focus {
   outline: none !important;
-  border-width: 2px !important;
+  border-width: 1px !important;
   border-color: var(--main-color) !important;
   box-shadow: none !important;
 }
@@ -30,6 +30,7 @@ ul li {
   background-color: var(--main-color);
   border-radius: 10px;
   border: none;
+  text-align: center;
   padding: 10px 17px;
   font-size: 17px;
 }
@@ -143,7 +144,88 @@ header .content-header .links li a.active::before {
   background-color: var(--main-color);
   bottom: 5px;
 }
+header .content-header .icons,
+header .content-header .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+header .content-header .icons {
+  display: none;
+}
 
+header .content-header .icons .notifications-icon,
+header .content-header .info .notifications-icon,
+header .content-header .icons .cart-icon,
+header .content-header .info .cart-icon {
+  position: relative;
+  background-color: var(--main-color);
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+header .content-header .icons .notifications-icon,
+header .content-header .info .notifications-icon {
+  background-color: #fff;
+}
+header .content-header .icons .notifications-icon,
+header .content-header .icons .cart-icon {
+  display: none;
+}
+header .content-header .icons .notifications-icon .number-notification,
+header .content-header .info .notifications-icon .number-notification,
+header .content-header .icons .cart-icon .number-cart,
+header .content-header .info .cart-icon .number-cart {
+  position: absolute;
+  top: -12px;
+  right: -6px;
+  color: #fff;
+  background-color: var(--main-color);
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header .content-header .icons .notifications-icon .number-notification,
+header .content-header .info .notifications-icon .number-notification {
+  top: -8px;
+}
+@media (max-width: 991px) {
+  header .content-header .icons,
+  header .content-header .info {
+    gap: 4px;
+  }
+  header .content-header .icons {
+    display: flex;
+  }
+  header .content-header .icons .notifications-icon,
+  header .content-header .info .notifications-icon,
+  header .content-header .icons .cart-icon,
+  header .content-header .info .cart-icon {
+    width: 25px;
+    height: 25px;
+  }
+  header .content-header .info .notifications-icon,
+  header .content-header .info .cart-icon {
+    display: none;
+    font-size: 13px;
+  }
+  header .content-header .icons .notifications-icon,
+  header .content-header .icons .cart-icon {
+    display: flex;
+    font-size: 13px;
+  }
+}
 header .content-header .info .member {
   position: relative;
   z-index: 30;
@@ -470,8 +552,14 @@ footer .footer-bottom {
   }
   .home-banar .content .banner .small-image {
     width: 110px;
-    top: 100px;
-    right: 0px;
+    top: 80px;
+    right: 70px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-banar .content .banner .small-image {
+    right: 20px;
   }
 }
 /* Start Courses  */
@@ -513,7 +601,35 @@ footer .footer-bottom {
   border-radius: 15px;
   background-color: #fff;
   box-shadow: 0px 0px 24px 0px #00000040;
+  position: relative;
 }
+.courses .boxs-courses .course .heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  top: 5px;
+  right: 5px;
+}
+.courses .boxs-courses .course .heart i {
+  color: #000;
+  transition: 0.3s;
+}
+.courses .boxs-courses .course .heart.active,
+.courses .boxs-courses .course .heart:hover {
+  border: 1px solid #f0516d;
+}
+.courses .boxs-courses .course .heart.active i,
+.courses .boxs-courses .course .heart:hover i {
+  color: #f0516d;
+}
+
 .courses .boxs-courses .course .image img {
   width: 100%;
 }
@@ -552,10 +668,11 @@ footer .footer-bottom {
   border-radius: 6px;
   font-size: 14px;
 }
-.courses .boxs-courses .course .info-course h4 {
+.courses .boxs-courses .course .info-course a h4 {
   font-size: 20px;
   font-weight: 700;
   padding: 10px 0;
+  color: #000000;
   margin: 0;
 }
 .courses .boxs-courses .course .info-course .info,
@@ -589,7 +706,7 @@ footer .footer-bottom {
   .courses .boxs-courses {
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
   }
-  .courses .boxs-courses .course .info-course h4 {
+  .courses .boxs-courses .course .info-course a h4 {
     font-size: 18px;
   }
   .courses .boxs-courses .course .info-course .info,
@@ -608,7 +725,7 @@ footer .footer-bottom {
 }
 .home-about .content-home-about .images,
 .home-about .content-home-about .text {
-  width: 50%;
+  /* width: 50%; */
 }
 .home-about .content-home-about .text {
   padding: 20px;
@@ -629,13 +746,13 @@ footer .footer-bottom {
   text-align: left;
 }
 .home-about .content-home-about .images .back {
-  width: 507px;
+  width: 500px;
 }
 .home-about .content-home-about .images .front {
   position: absolute;
-  top: -49px;
-  right: 8px;
-  width: 550px;
+  bottom: 0px;
+  left: 80px;
+  width: 500px;
 }
 
 @media (max-width: 991px) {
@@ -963,8 +1080,7 @@ footer .footer-bottom {
   width: 90%;
   margin: auto;
 }
-.about .about-content .text {
-}
+
 .about .about-content .text .header {
   font-size: 40px;
   font-weight: 700;
@@ -975,6 +1091,9 @@ footer .footer-bottom {
   font-size: 21px;
   line-height: 40px;
   margin: 20px 0;
+}
+.about .about-content .text ul {
+  padding: 0;
 }
 .about .about-content .text ul li {
   font-size: 21px;
@@ -1008,5 +1127,202 @@ footer .footer-bottom {
   }
   .about .about-content .text ul li {
     font-size: 17px;
+  }
+}
+/* ===================== Cart Page========== ====== */
+.content-cart {
+  max-width: 900px;
+  margin: 20px auto;
+  box-shadow: 0px 0px 70px 0px #0000001a;
+  border-radius: 16px;
+  padding: 10px 0;
+}
+.content-cart .header-cart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px;
+}
+.content-cart .header-cart h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+}
+.content-cart .delete-item {
+  padding: 5px 10px !important;
+  font-size: 13px !important;
+  color: #272727 !important;
+  border: 1px solid #f0516d !important;
+}
+.content-cart .delete-item i {
+  padding-left: 3px;
+  color: #f0516d !important;
+  transition: 0.3s;
+}
+.content-cart .delete-item:hover,
+.content-cart .delete-item:hover i {
+  color: #fff !important;
+  background-color: #f0516d !important;
+}
+.content-cart .body-cart {
+  padding: 20px 0;
+}
+.content-cart .body-cart .item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  border-bottom: 1px solid #e6e6e6;
+  position: relative;
+}
+
+.content-cart .body-cart .item .content-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.content-cart .body-cart .item .content-item img {
+  width: 120px;
+  height: 120px;
+}
+.content-cart .body-cart .item .content-item .info-item h4 {
+  color: #1f2427;
+  font-size: 17px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.content-cart .body-cart .item .content-item .info-item .price {
+  color: var(--main-color);
+  font-size: 15px;
+}
+.content-cart
+  .body-cart
+  .item
+  .content-item
+  .info-item
+  .price
+  .price-befor-discount {
+  font-size: 15px;
+  text-decoration: line-through;
+  color: #9b9b9b;
+}
+.content-cart .footer-cart a {
+  display: block;
+  margin: auto;
+  width: max-content;
+}
+@media (max-width: 787px) {
+  .content-cart .body-cart .item {
+    padding: 5px 10px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .content-cart .body-cart .item .item-link {
+    width: 100%;
+  }
+}
+
+/* ===================== Confirm Order Page========== ====== */
+.confirm-order {
+  margin: 50px auto;
+}
+.confirm-order .content-order {
+  display: flex;
+  gap: 30px;
+}
+.confirm-order .content-order .information,
+.confirm-order .content-order .details {
+  box-shadow: 0px 0px 70px 0px #0000001a;
+  border-radius: 16px;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.confirm-order .content-order .information {
+  width: 65%;
+}
+.confirm-order .content-order .details {
+  width: 35%;
+}
+.confirm-order .content-order .details .header-details,
+.confirm-order .content-order .information .header-information {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 10px;
+}
+.confirm-order .content-order .details .header-details h3,
+.confirm-order .content-order .information .header-information h3 {
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  margin: 0;
+}
+.confirm-order .content-order .information .body-information {
+  padding: 10px 15px;
+}
+.confirm-order .content-order .information .body-information .form-coupone {
+  width: 100%;
+}
+
+.information .body-information .form-coupone .coupone label {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.information .body-information .form-coupone .coupone p {
+  display: block;
+}
+.information .body-information .form-coupone .coupone div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+}
+
+.information .body-information .form-coupone .coupone input {
+  width: 90%;
+  border-radius: 0px 5px 5px 0;
+  font-size: 16px;
+  border-left: transparent;
+}
+.information .body-information .form-coupone .coupone .confirm-coupone {
+  border-radius: 10px 0 0 10px;
+  padding: 7px 17px !important;
+  font-size: 16px !important;
+}
+.confirm-order .content-order .details .body-details {
+  padding: 10px 20px;
+}
+.confirm-order .content-order .details .body-details .total,
+.confirm-order .content-order .details .body-details .subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #272727;
+  font-size: 17px;
+  margin: 0;
+  padding: 0;
+}
+.confirm-order .content-order .details .body-details .total h5 {
+  font-weight: 700;
+  color: var(--main-color);
+}
+.confirm-order .content-order .details .footer-details .confirm {
+  display: block;
+  margin: 5px;
+}
+@media (max-width: 991px) {
+  .confirm-order .content-order {
+    flex-direction: column;
+  }
+  .confirm-order .content-order .information {
+    width: 100%;
+  }
+  .information .body-information .form-coupone .coupone div {
+    width: 100%;
+  }
+  .confirm-order .content-order .details {
+    width: 100%;
   }
 }

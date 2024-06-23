@@ -16,11 +16,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- swiper  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="css/main.css" />
     <title>منصة خديجة التعليمية</title>
   </head>
@@ -40,14 +35,13 @@
           </div>
           <ul class="links">
             <i class="fa-solid fa-close close-sidbar"></i>
-            <li><a href="index.html" class="active">الرئيسيه</a></li>
+            <li><a href="index.html">الرئيسيه</a></li>
             <li><a href="about.html"> من نحن </a></li>
             <li><a href="courses.html">الدورات</a></li>
             <li><a href="contact-us.html"> تواصل معنا </a></li>
           </ul>
           <div class="info">
-            <div class="not-member">
-              <!-- تسجيل الدخول  -->
+            <!-- <div class="not-member">
               <a
                 class="main-btn"
                 data-bs-toggle="modal"
@@ -105,7 +99,7 @@
                         </div>
                         <div class="mb-3 form-check">
                           <input type="checkbox" id="exampleCheck1" />
-                          <!-- class="form-check-input" -->
+                          
                           <label class="form-check-label" for="exampleCheck1"
                             >تذكرني</label
                           >
@@ -118,7 +112,6 @@
                   </div>
                 </div>
               </div>
-              <!--  انشاء حساب  -->
               <a
                 class="main-btn-opacity"
                 data-bs-toggle="modal"
@@ -212,8 +205,8 @@
                   </div>
                 </div>
               </div>
-            </div>
-            <!-- <div class="member">
+            </div> -->
+            <div class="member">
               <div class="name" onclick="menuToggle();">
                 مرحبا , احمد محمود <i class="fa-solid fa-caret-down"></i>
               </div>
@@ -222,28 +215,24 @@
                   <i class="fa-solid fa-user"></i>
                   الملف الشخصي
                 </a>
-
                 <a href="my-courses.html">
                   <i class="fa-solid fa-user"></i>
                   دوراتي
                 </a>
-
                 <a href="wishlist.html">
                   <i class="fa-solid fa-heart"></i>
                   المفضلة
                 </a>
-
                 <a href="terms_conditions.html">
                   <i class="fa-solid fa-briefcase"></i>
                   الشروط والاحكام
                 </a>
-
                 <a href="index.html">
                   <i class="fa-solid fa-right-from-bracket"></i>
                   تسجيل الخروج
                 </a>
               </div>
-            </div> -->
+            </div>
             <a class="cart-icon" href="cart.html">
               <i class="fa-solid fa-cart-shopping"></i>
               <span class="number-cart">10</span>
@@ -269,66 +258,14 @@
         </div>
       </div>
     </header>
-    <!-- Start Home banner  -->
-    <div class="home-banar">
-      <div class="container">
-        <div class="content">
-          <div class="description">
-            <h3>دورات على أعلى مستوى في مجال التجميل</h3>
-            <p>
-              يهدف الموقع إلى توفير فرص تعليمية شاملة ومتخصصة للمهتمين بمجال
-              التجميل، سواء كانوا مبتدئين أو محترفين، ويعمل على تطوير قدراتهم
-              ومهاراتهم.
-            </p>
-            <button class="main-btn">من نحن</button>
-          </div>
-          <div class="banner">
-            <img src="images/Group 12.png" class="big-image" alt="" />
-            <img src="images/Group 13.png" class="small-image" alt="" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Start Home Brand  -->
-    <div class="brand">
-      <div class="container">
-        <h3>موثوق بنا من قبل أكثر من 100 شركة رائدة</h3>
-        <div class="brand-slider swiper">
-          <div class="content-brands swiper-wrapper">
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="main-header">
+      <h2>دوراتي</h2>
     </div>
 
     <!-- Start Courses  -->
     <div class="courses">
-      <div class="container">
-        <div class="header-courses">
-          <h3>الدورات</h3>
-          <a href="">أستكشف الدورات <i class="fa-solid fa-angle-left"></i></a>
-        </div>
-      </div>
       <!-- Start Courses -->
-      <div class="content-courses content-courses-home">
+      <div class="content-courses">
         <div class="container">
           <div class="boxs-courses">
             <div class="course">
@@ -742,51 +679,6 @@
       </div>
     </div>
 
-    <!-- Start Home About  -->
-    <div class="home-about">
-      <div class="container">
-        <div class="content-home-about">
-          <div class="text">
-            <h3>دورات معتمدة في مجال التجميل.</h3>
-            <p>
-              تعتبر الشهادات المعتمدة مهمة لأنها تساعد على بناء الثقة بين
-              العملاء وأصحاب العمل، وتعزز فرص الحصول على فرص عمل جديدة وتقدم في
-              مجال التجميل.
-            </p>
-            <a href="#" class="main-btn">تعرف علي المعلم</a>
-          </div>
-          <div class="images">
-            <img src="images/Rectangle 11.png" alt="" class="back" />
-            <img src="images/pngegg (4) 1.png" alt="" class="front" />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Start Subscriptions  -->
-    <div class="subscription">
-      <div class="container">
-        <div class="box">
-          <h3>الإشتراك في البريد لمتابعة أجدد الدورات</h3>
-          <p>
-            تسجيل البريد الإلكتروني للحصول على محتوى محدد ومتجدد بشكل منتظم عبر
-            البريد الإلكتروني.
-          </p>
-          <form action="#" method="post">
-            <div>
-              <input
-                type="email"
-                name="email"
-                placeholder="ادخل البريد الاكتروني"
-              />
-              <button type="submit">
-                <i class="fa-solid fa-paper-plane"></i>
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div>
     <!-- Start Footer  -->
     <footer>
       <div class="container">
@@ -824,8 +716,6 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
-    <!-- swipper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

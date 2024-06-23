@@ -16,11 +16,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- swiper  -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
     <link rel="stylesheet" href="css/main.css" />
     <title>منصة خديجة التعليمية</title>
   </head>
@@ -41,7 +36,7 @@
           <ul class="links">
             <i class="fa-solid fa-close close-sidbar"></i>
             <li><a href="index.html">الرئيسيه</a></li>
-            <li><a href="about.html" class="active"> من نحن </a></li>
+            <li><a href="about.html"> من نحن </a></li>
             <li><a href="courses.html">الدورات</a></li>
             <li><a href="contact-us.html"> تواصل معنا </a></li>
           </ul>
@@ -264,74 +259,62 @@
       </div>
     </header>
     <div class="main-header">
-      <h2>من نحن</h2>
+      <h2>استكمال الطلب</h2>
     </div>
-    <!-- Start about -->
-    <div class="about">
+
+    <!-- Start Confirm Order  -->
+    <div class="confirm-order">
       <div class="container">
-        <div class="about-content">
-          <div class="image">
-            <img src="images/about.png" alt="" srcset="" />
+        <div class="content-order">
+          <div class="information">
+            <div class="header-information">
+              <h3>بيانات الطلب</h3>
+            </div>
+            <div class="body-information">
+              <form action="#" method="post" class="form-coupone">
+                <div class="coupone">
+                  <p>كوبون الخصم</p>
+                  <div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="ادخل كوبون الخصم"
+                      name="coupone"
+                    />
+                    <button type="submit" class="main-btn confirm-coupone">
+                      تفعيل
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
           </div>
-          <div class="text">
-            <h3 class="header">من نحن</h3>
-            <p class="long-text">
-              منصة دورات التجميل هي منصة تعليمية عبر الإنترنت شاملة، مخصصة
-              لتقديم تعليم وتدريب عالي الجودة للأفراد المهتمين بصناعة التجميل
-              والعناية بالبشرة. سواء كنت فنان مكياج طموح، أخصائي عناية بالبشرة،
-              أو محترف متمرس تبحث عن توسيع مهاراتك، تقدم هذه المنصة مجموعة واسعة
-              من الدورات والموارد لمساعدتك على تحقيق أهدافك.
-            </p>
-            <ul>
-              <li>
-                <img src="images/icon.png" alt="" />هنا نص يمكن ان يستبدل هنا نص
-                يمكن ان يستبدل
-              </li>
-              <li>
-                <img src="images/icon.png" alt="" />هنا نص يمكن ان يستبدل هنا نص
-                يمكن ان يستبدل
-              </li>
-              <li>
-                <img src="images/icon.png" alt="" />هنا نص يمكن ان يستبدل هنا نص
-                يمكن ان يستبدل
-              </li>
-              <li>
-                <img src="images/icon.png" alt="" />هنا نص يمكن ان يستبدل هنا نص
-                يمكن ان يستبدل
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Start Home Brand  -->
-    <div class="brand">
-      <div class="container">
-        <h3>موثوق بنا من قبل أكثر من 100 شركة رائدة</h3>
-        <div class="brand-slider swiper">
-          <div class="content-brands swiper-wrapper">
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
+          <div class="details">
+            <div class="header-details">
+              <h3>ملخص الطلب</h3>
             </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
+            <div class="body-details">
+              <div class="subtotal">
+                <p>قيمة المنتجات</p>
+                <p>300 ر.س</p>
+              </div>
+              <div class="subtotal">
+                <p>قيمة الخصم</p>
+                <p>300 ر.س</p>
+              </div>
+              <div class="total">
+                <h5>الاجمالي</h5>
+                <h5>300 ر.س</h5>
+              </div>
             </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
-            </div>
-            <div class="card-brand swiper-slide">
-              <img src="images/logo.png" alt="" />
+            <div class="footer-details">
+              <a href="#" class="main-btn confirm">تاكيد الطلب</a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- Start Footer  -->
     <footer>
       <div class="container">
@@ -369,8 +352,6 @@
       integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
       crossorigin="anonymous"
     ></script>
-    <!-- swipper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
