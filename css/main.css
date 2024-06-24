@@ -93,7 +93,7 @@ ul li {
 }
 
 header {
-  padding: 10px;
+  padding: 10px 0;
   background-color: #ffffff;
 }
 header .content-header {
@@ -596,6 +596,12 @@ footer .footer-bottom {
   background-position: top;
   padding: 20px 10px;
 }
+.courses .content-courses .same-course {
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding: 5px 20px;
+}
 .courses .boxs-courses {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -701,8 +707,11 @@ footer .footer-bottom {
 }
 
 @media (max-width: 991px) {
+  .courses .content-courses .same-course {
+    font-size: 22px;
+  }
   .courses .header-courses h3 {
-    font-size: 25px;
+    font-size: 22px;
   }
   .courses .header-courses a {
     font-size: 15px;
@@ -1089,6 +1098,15 @@ footer .footer-bottom {
   .content-course .parent-main-video .details-instractour .instractour img {
     width: 55px;
     height: 55px;
+  }
+  .content-course .parent-main-video .title-course {
+    font-size: 22px;
+  }
+  .content-course .parent-main-video .details-instractour {
+    align-items: normal;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 15px;
   }
 
   .details-instractour .instractour .text .name {
