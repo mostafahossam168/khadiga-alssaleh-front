@@ -922,7 +922,38 @@ footer .footer-bottom {
   overflow-wrap: anywhere;
   margin-bottom: 10px;
 }
-
+.content-course .parent-main-video .box-instractour {
+  border: 0.35px solid #4f4f4f;
+  border-radius: 8.37px;
+  padding: 10px;
+  position: relative;
+}
+.content-course .parent-main-video .box-instractour .heart {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s;
+  top: 5px;
+  left: 10px;
+}
+.content-course .parent-main-video .box-instractour .heart i {
+  color: #000;
+  transition: 0.3s;
+}
+.content-course .parent-main-video .box-instractour .heart.active,
+.content-course .parent-main-video .box-instractour .heart:hover {
+  border: 1px solid #f0516d;
+}
+.content-course .parent-main-video .box-instractour .heart.active i,
+.content-course .parent-main-video .box-instractour .heart:hover i {
+  color: #f0516d;
+}
 .content-course .parent-main-video .title-course {
   font-weight: 700;
   font-size: 25px;
@@ -932,9 +963,6 @@ footer .footer-bottom {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 0.35px solid #4f4f4f;
-  border-radius: 8.37px;
-  padding: 10px;
 }
 .content-course .parent-main-video .details-instractour .instractour {
   display: flex;
@@ -1100,7 +1128,7 @@ footer .footer-bottom {
     height: 55px;
   }
   .content-course .parent-main-video .title-course {
-    font-size: 22px;
+    font-size: 20px;
   }
   .content-course .parent-main-video .details-instractour {
     align-items: normal;
